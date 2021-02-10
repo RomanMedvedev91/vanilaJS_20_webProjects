@@ -4,3 +4,4 @@
 Deployment links:
 1. https://romanmedvedev91.github.io/vanilaJS_webProjects/01_formValidator/
 2. https://romanmedvedev91.github.io/vanilaJS_webProjects/02_movieSeatBooking/
+3. https://romanmedvedev91.github.io/vanilaJS_webProjects/03_videoPlayer/
