@@ -7,3 +7,4 @@ Deployment links:
 3. https://romanmedvedev91.github.io/vanilaJS_webProjects/03_videoPlayer/
 4. https://romanmedvedev91.github.io/vanilaJS_webProjects/04_exchangeRateCalculator/
 5. https://romanmedvedev91.github.io/vanilaJS_webProjects/05_DomArrayMethods/
+6. https://romanmedvedev91.github.io/vanilaJS_webProjects/06_menuSlider/
