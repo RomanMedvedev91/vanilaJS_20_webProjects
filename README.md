@@ -8,3 +8,4 @@ Deployment links:
 4. https://romanmedvedev91.github.io/vanilaJS_webProjects/04_exchangeRateCalculator/
 5. https://romanmedvedev91.github.io/vanilaJS_webProjects/05_DomArrayMethods/
 6. https://romanmedvedev91.github.io/vanilaJS_webProjects/06_menuSlider/
+7. https://romanmedvedev91.github.io/vanilaJS_webProjects/07_hangmanGame/
