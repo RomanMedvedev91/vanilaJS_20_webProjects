@@ -11,3 +11,4 @@ Deployment links:
 7. https://romanmedvedev91.github.io/vanilaJS_webProjects/07_hangmanGame/
 8. https://romanmedvedev91.github.io/vanilaJS_webProjects/08_mealFinder/
 9. https://romanmedvedev91.github.io/vanilaJS_webProjects/09_expenceTracker/
+10. https://romanmedvedev91.github.io/vanilaJS_webProjects/10_musicPlayer/
