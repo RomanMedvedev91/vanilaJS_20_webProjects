@@ -30,6 +30,7 @@ h1 {
 .filter {
   width: 100%;
   padding: 12px;
+  font-size: 16px;
 }
 
 .post {
@@ -74,7 +75,7 @@ h1 {
 }
 
 .loader {
-  /* opacity: 0; */
+  opacity: 0;
   display: flex;
   position: fixed;
   bottom: 50px;
@@ -84,7 +85,7 @@ h1 {
 .loader.show {
   opacity: 1;
 }
-.cirle {
+.circle {
   background-color: #fff;
   width: 10px;
   height: 10px;
@@ -93,10 +94,10 @@ h1 {
   animation: bounce 0.5s ease-in infinite;
 }
 
-.cirle:nth-last-of-type(2) {
+.circle:nth-last-of-type(2) {
   animation-delay: 0.1s;
 }
-.cirle:nth-last-of-type(3) {
+.circle:nth-last-of-type(3) {
   animation-delay: 0.2s;
 }
 
