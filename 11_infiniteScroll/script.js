@@ -18,8 +18,6 @@ async function getPosts() {
 async function showPosts() {
   const posts = await getPosts();
 
-  // console.log(posts);
-
   posts.forEach((post) => {
     const postEl = document.createElement("div");
     postEl.classList.add("post");
@@ -32,7 +30,6 @@ async function showPosts() {
       <p class='post-body'>${post.body}</p>
       </div>
       `;
-
     postsContainer.appendChild(postEl);
   });
 }
@@ -46,8 +43,8 @@ function showLoding() {
     setTimeout(() => {
       page++;
       showPosts();
-    }, 300);
-  }, 1000);
+    }, 200);
+  }, 500);
 }
 
 // FIlter POSTs by input
