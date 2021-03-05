@@ -13,3 +13,4 @@ Deployment links:
 9. https://romanmedvedev91.github.io/vanilaJS_webProjects/09_expenceTracker/
 10. https://romanmedvedev91.github.io/vanilaJS_webProjects/10_musicPlayer/
 11. https://romanmedvedev91.github.io/vanilaJS_webProjects/11_infiniteScroll/
+12. https://romanmedvedev91.github.io/vanilaJS_webProjects/12_typingGame/
