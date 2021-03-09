@@ -69,6 +69,70 @@ function createBox(item) {
 <p class="info">${text}</p>
 `;
 
-  // @todo- speak event
+  box.addEventListener("click", () => {
+    setTextMessage(text);
+    speakText();
+
+    // add active effect
+    box.classList.add("active");
+    setTimeout(() => {
+      box.classList.remove("active"), 500;
+    });
+  });
+
   main.appendChild(box);
 }
+
+// INIT SPEECH SYNTH
+const message = new SpeechSynthesisUtterance();
+
+// STORE VOICES
+let voices = [];
+
+function getVoices() {
+  voices = speechSynthesis.getVoices();
+
+  voices.forEach((voice) => {
+    const option = document.createElement("option");
+
+    option.value = voice.name;
+    option.innerText = `${voice.name} ${voice.lang}`;
+    voicesSelect.appendChild(option);
+  });
+}
+
+// SET text
+function setTextMessage(text) {
+  message.text = text;
+}
+
+// speak text
+function speakText() {
+  speechSynthesis.speak(message);
+}
+
+// set voice
+function setVoice(e) {
+  message.voice = voices.find((voice) => voice.name === e.target.value);
+}
+
+// VOICES CHANGED
+speechSynthesis.addEventListener("voiceschanged", getVoices);
+// TOGGLE TEXT BOX
+toggleBtn.addEventListener("click", () => {
+  document.getElementById("text-box").classList.toggle("show");
+});
+// close btn
+closeBtn.addEventListener("click", () => {
+  document.getElementById("text-box").classList.remove("show");
+});
+
+// change voice
+voicesSelect.addEventListener("change", setVoice);
+
+// Read text button
+readBtn.addEventListener("click", () => {
+  setTextMessage(textarea.value);
+  speakText();
+});
+getVoices();
