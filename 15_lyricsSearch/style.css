@@ -100,7 +100,7 @@ ul.songs li {
 .container {
   margin: 30px auto;
   max-width: 100%;
-  width: 500%;
+  width: 500px;
 }
 
 .container h2 {
