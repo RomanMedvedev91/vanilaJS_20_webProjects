@@ -17,3 +17,4 @@ Deployment links:
 13. https://romanmedvedev91.github.io/vanilaJS_webProjects/13_speechTextReader/
 14. https://romanmedvedev91.github.io/vanilaJS_webProjects/14_memoryCards/
 15. https://romanmedvedev91.github.io/vanilaJS_webProjects/15_lyricsSearch/
+16. https://romanmedvedev91.github.io/vanilaJS_webProjects/16_relaxApp/
