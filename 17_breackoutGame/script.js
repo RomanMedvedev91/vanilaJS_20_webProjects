@@ -87,10 +87,10 @@ function drawBricks() {
 }
 
 // move paddle on canvas
-function movePalle() {
+function movePaddle() {
   paddle.x += paddle.dx;
 
-  // wall detection
+  // Wall detection
   if (paddle.x + paddle.w > canvas.width) {
     paddle.x = canvas.width - paddle.w;
   }
@@ -99,10 +99,80 @@ function movePalle() {
     paddle.x = 0;
   }
 }
+
+//Move BALL on canvas
+function moveBall() {
+  ball.x += ball.dx;
+  ball.y += ball.dy;
+
+  // wall collision (x)
+  if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
+    ball.dx *= -1;
+    // ball.dx = ball.dx * -1
+  }
+
+  // wall collision (y)
+  if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
+    ball.dy *= -1;
+  }
+
+  // paddle collision
+  if (
+    ball.x - ball.size > paddle.x &&
+    ball.x + ball.size < paddle.x + paddle.w &&
+    ball.y + ball.size > paddle.y
+  ) {
+    ball.dy = -ball.speed;
+  }
+
+  // bricl collision
+  bricks.forEach((column) => {
+    column.forEach((brick) => {
+      if (brick.visible) {
+        if (
+          ball.x - ball.size > brick.x && //left brick side check
+          ball.x + ball.size < brick.x + brick.w && //right brick side check
+          ball.y + ball.size > brick.y && //top brick side check
+          ball.y - ball.size < brick.y + brick.h //bottom brick side check
+        ) {
+          ball.dy *= -1;
+          brick.visible = false;
+
+          increaseScore();
+        }
+      }
+    });
+  });
+
+  if (ball.y + ball.size > canvas.height) {
+    showAllBricks();
+    score = 0;
+  }
+}
+// hit bottom wall - Lose
+
+// Increase Score
+function increaseScore() {
+  score++;
+
+  if (score % (brickRowCount * brickRowCount) === 0) {
+    showAllBricks();
+  }
+}
+
+// make all bricks
+function showAllBricks() {
+  bricks.forEach((column) => {
+    column.forEach((brick) => {
+      brick.visible = true;
+    });
+  });
+}
+
 // draw everything
 function draw() {
   // clear canbas
-  ctx.clearRect(0, 0, canvas.with, canvas.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBall();
   drawPaddle();
   drawScore();
@@ -112,7 +182,8 @@ function draw() {
 // update canvas drawing and animation
 
 function update() {
-  movePalle();
+  movePaddle();
+  moveBall();
   // draw everything
   draw();
 
