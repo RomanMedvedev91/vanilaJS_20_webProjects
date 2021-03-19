@@ -20,3 +20,4 @@ Deployment links:
 16. https://romanmedvedev91.github.io/vanilaJS_webProjects/16_relaxApp/
 17. https://romanmedvedev91.github.io/vanilaJS_webProjects/17_breackoutGame/
 18. https://romanmedvedev91.github.io/vanilaJS_webProjects/18_newYearCount/
+19. https://romanmedvedev91.github.io/vanilaJS_webProjects/19_sortableList/
