@@ -21,3 +21,4 @@ Deployment links:
 17. https://romanmedvedev91.github.io/vanilaJS_webProjects/17_breackoutGame/
 18. https://romanmedvedev91.github.io/vanilaJS_webProjects/18_newYearCount/
 19. https://romanmedvedev91.github.io/vanilaJS_webProjects/19_sortableList/
+20. https://romanmedvedev91.github.io/vanilaJS_webProjects/20_speakNumberGame/
