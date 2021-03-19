@@ -19,3 +19,4 @@ Deployment links:
 15. https://romanmedvedev91.github.io/vanilaJS_webProjects/15_lyricsSearch/
 16. https://romanmedvedev91.github.io/vanilaJS_webProjects/16_relaxApp/
 17. https://romanmedvedev91.github.io/vanilaJS_webProjects/17_breackoutGame/
+18. https://romanmedvedev91.github.io/vanilaJS_webProjects/18_newYearCount/
