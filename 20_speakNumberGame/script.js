@@ -28,7 +28,7 @@ function writeMessage(msg) {
 `;
 }
 // check msg against number
-function checkNumber() {
+function checkNumber(msg) {
   const num = +msg;
 
   // check if valid number
@@ -52,7 +52,7 @@ function checkNumber() {
     `;
   } else if (num > randomNum) {
     msgEl.innerHTML += "<div>GO LOWER</div>";
-  } else if (num < randomNum) {
+  } else (num < randomNum) {
     msgEl.innerHTML += "<div>GO HIGHER</div>";
   }
 }
